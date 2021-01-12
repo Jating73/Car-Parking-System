@@ -31,8 +31,8 @@ If the installation was successful, you should be able to run the following comm
 - ### Need to rename the .env_sample to .env
 
 ## Installing additional dependencies
+  It will install all the dependencies to be required to run the project.
     $ npm i
-    It will install all the dependencies to be required to run the project.
 
 ## Note-
   It will only make 10 request in 10 seconds to server. So if you want to configure it you can.
