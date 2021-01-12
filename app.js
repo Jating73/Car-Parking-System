@@ -1,6 +1,16 @@
 const express = require("express");
+const rateLimit = require("express-rate-limit");
+
 require('dotenv').config()
+
+const limiter = rateLimit({
+  windowMs: 10 * 1000, // 10 seconds
+  max: 10 // limit each IP to 10 requests per windowMs
+});
+
 const app = express();
+
+app.use(limiter);
 
 let carDetails = [];
 let len = process.env.slot_size;
