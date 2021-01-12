@@ -28,7 +28,11 @@ If the installation was successful, you should be able to run the following comm
 
 ## Changes required before running the file
 - ### Put the slot size according to your prefrence instead of your_slot_size_here in .env_sample
-- ### Need to rename the .env_sameple to .env
+- ### Need to rename the .env_sample to .env
+
+## Installing additional dependencies
+  $ npm i
+  It will install all the dependencies to be required to run the project.
 
 ## Note-
   It will only make 10 request in 10 seconds to server. So if you want to configure it you can.
