@@ -1,9 +1,10 @@
 const express = require("express");
+require('dotenv').config()
 const app = express();
 
 let carDetails = [];
-let len = 4
-let slotavailable = 4;
+let len = process.env.slot_size;
+let slotavailable = process.env.slot_size;
 
 function initial() {
   for (var i = 0; i < len; i++) {
